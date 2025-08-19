@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Χρήστος Μάστορας – Είδηση</title>
+  <!-- Link shared styles -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Navigation bar replicated -->
+  <nav class="navbar">
+    <div class="logo">GreekMusic Official</div>
+    <ul class="nav-links">
+      <li><a href="index.html#home" data-en="Home" data-el="Αρχική">Αρχική</a></li>
+      <li><a href="index.html#playlists" data-en="Playlists" data-el="Λίστες">Λίστες</a></li>
+      <li><a href="index.html#tickets" data-en="Tickets" data-el="Εισιτήρια">Εισιτήρια</a></li>
+      <li><a href="index.html#news" data-en="News" data-el="Νέα">Νέα</a></li>
+      <li><a href="index.html#releases" data-en="Releases" data-el="Κυκλοφορίες">Κυκλοφορίες</a></li>
+    </ul>
+    <div class="nav-extras">
+      <a href="https://www.instagram.com/greekmusic_official/" target="_blank" class="instagram-nav" title="Follow on Instagram">
+        <i class="fab fa-instagram"></i>
+        <span data-en="Follow us on Instagram" data-el="Ακολουθήστε μας στο Instagram">Ακολουθήστε μας στο Instagram</span>
+      </a>
+      <div class="lang-switch">
+        <span id="lang-el" class="active">Ελληνικά</span> | <span id="lang-en">English</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article section -->
+  <main class="article-page">
+    <article class="news-article">
+      <img src="mastoras.jpg" alt="Christos Mastoras" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:12px; margin-bottom:1rem;" />
+      <h1 data-en="Christos Mastoras: arrested for drunk driving" data-el="Χρήστος Μάστορας: σύλληψη για οδήγηση υπό την επήρεια αλκοόλ">Χρήστος Μάστορας: σύλληψη για οδήγηση υπό την επήρεια αλκοόλ</h1>
+      <p data-en="On 4 Feb 2025 the Athens District Court Prosecutor’s office announced criminal proceedings against Melisses frontman Christos Mastoras after he was arrested for driving under the influence in central Athens." data-el="Στις 4 Φεβρουαρίου 2025 η Εισαγγελία Πρωτοδικών Αθηνών ανακοίνωσε ποινική δίωξη κατά του τραγουδιστή των Melisses, Χρήστου Μάστορα, αφού συνελήφθη για οδήγηση υπό την επήρεια αλκοόλ στο κέντρο της Αθήνας.">Στις 4 Φεβρουαρίου 2025 η Εισαγγελία Πρωτοδικών Αθηνών ανακοίνωσε ποινική δίωξη κατά του τραγουδιστή των Melisses, Χρήστου Μάστορα, αφού συνελήφθη για οδήγηση υπό την επήρεια αλκοόλ στο κέντρο της Αθήνας.</p>
+      <p data-en="According to reports, a breathalyzer test showed his blood‑alcohol level was over the legal limit. He faces charges of dangerous driving and remains free until his trial." data-el="Σύμφωνα με αναφορές, αλκοτέστ έδειξε ότι το επίπεδο αλκοόλ στο αίμα του ήταν πάνω από το νόμιμο όριο. Αντιμετωπίζει κατηγορίες για επικίνδυνη οδήγηση και παραμένει ελεύθερος έως τη δίκη του.">Σύμφωνα με αναφορές, αλκοτέστ έδειξε ότι το επίπεδο αλκοόλ στο αίμα του ήταν πάνω από το νόμιμο όριο. Αντιμετωπίζει κατηγορίες για επικίνδυνη οδήγηση και παραμένει ελεύθερος έως τη δίκη του.</p>
+      <p data-en="The singer apologised through his lawyer, expressing regret for the incident and urging people not to drink and drive." data-el="Ο τραγουδιστής, μέσω του δικηγόρου του, ζήτησε συγγνώμη εκφράζοντας λύπη για το περιστατικό και προτρέποντας τον κόσμο να μην πίνει και οδηγεί.">Ο τραγουδιστής, μέσω του δικηγόρου του, ζήτησε συγγνώμη εκφράζοντας λύπη για το περιστατικό και προτρέποντας τον κόσμο να μην πίνει και οδηγεί.</p>
+      <p class="article-cite" data-en="Source: Greek City Times" data-el="Πηγή: Greek City Times">Πηγή: Greek City Times</p>
+      <a href="index.html#news" class="btn back-btn" data-en="Back to News" data-el="Επιστροφή στα Νέα">Επιστροφή στα Νέα</a>
+    </article>
+  </main>
+
+  <!-- Script for language switching (same as index) -->
+  <script>
+    const langElBtn = document.getElementById('lang-el');
+    const langEnBtn = document.getElementById('lang-en');
+    function setLanguage(lang) {
+      const translatable = document.querySelectorAll('[data-en]');
+      translatable.forEach((el) => {
+        if (lang === 'en') {
+          el.textContent = el.getAttribute('data-en');
+        } else {
+          el.textContent = el.getAttribute('data-el');
+        }
+      });
+    }
+    langElBtn.addEventListener('click', () => {
+      setLanguage('el');
+      langElBtn.classList.add('active');
+      langEnBtn.classList.remove('active');
+    });
+    langEnBtn.addEventListener('click', () => {
+      setLanguage('en');
+      langEnBtn.classList.add('active');
+      langElBtn.classList.remove('active');
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+      setLanguage('el');
+    });
+  </script>
+</body>
+</html>

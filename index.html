@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreekMusic Official</title>
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreekMusic Official</div>
+      <ul class="nav-links">
+        <li><a href="#home" data-en="Home" data-el="Αρχική">Αρχική</a></li>
+        <!-- Removed About link as requested -->
+        <li><a href="#playlists" data-en="Playlists" data-el="Λίστες">Λίστες</a></li>
+        <li><a href="#tickets" data-en="Tickets" data-el="Εισιτήρια">Εισιτήρια</a></li>
+        <li><a href="#news" data-en="News" data-el="Νέα">Νέα</a></li>
+        <li><a href="#releases" data-en="Releases" data-el="Κυκλοφορίες">Κυκλοφορίες</a></li>
+      </ul>
+      <!-- Language switcher and Instagram link -->
+      <div class="nav-extras">
+        <!-- Instagram follow icon with text -->
+        <a href="https://www.instagram.com/greekmusic_official/" target="_blank" class="instagram-nav" title="Follow on Instagram">
+          <i class="fab fa-instagram"></i>
+          <span data-en="Follow us on Instagram" data-el="Ακολουθήστε μας στο Instagram">Ακολουθήστε μας στο Instagram</span>
+        </a>
+        <!-- Language switcher -->
+        <div class="lang-switch">
+          <span id="lang-el" class="active">Ελληνικά</span> | <span id="lang-en">English</span>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+      <div class="slider">
+        <!-- Slide 1: Sandre -->
+        <div class="slide">
+          <div class="slide-container">
+            <div class="slide-info">
+              <h2 data-en="“Sandre” – Anna Vissi" data-el="“Sandre” – Άννα Βίσση">“Sandre” – Άννα Βίσση</h2>
+              <p data-en="Anna Vissi returns with her new single composed by Nikos Karvelas." data-el="Η Άννα Βίσση επιστρέφει με το νέο της single, σε μουσική Νίκου Καρβέλα.">Η Άννα Βίσση επιστρέφει με το νέο της single, σε μουσική Νίκου Καρβέλα.</p>
+              <a href="#releases" class="btn" data-en="Listen" data-el="Άκουσε">Άκουσε</a>
+            </div>
+            <div class="slide-image">
+            <!-- Use official album cover from Spotify thumbnail -->
+            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024eaa7d1f10cf5335d0ff8ceb" alt="Sandre cover" />
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2: Disco-Tech -->
+        <div class="slide">
+          <div class="slide-container">
+            <div class="slide-info">
+              <h2 data-en="“Disco‑Tech” – Eleni Foureira" data-el="“Disco‑Tech” – Ελένη Φουρέιρα">“Disco‑Tech” – Ελένη Φουρέιρα</h2>
+              <p data-en="The pop queen delivers a dance track released in May 2025." data-el="Η ποπ βασίλισσα μάς χαρίζει ένα dance track που κυκλοφόρησε τον Μάιο 2025.">Η ποπ βασίλισσα μάς χαρίζει ένα dance track που κυκλοφόρησε τον Μάιο 2025.</p>
+              <a href="#releases" class="btn" data-en="Listen" data-el="Άκουσε">Άκουσε</a>
+            </div>
+            <div class="slide-image">
+            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0282c40745398e642d36e812d1" alt="Disco-Tech cover" />
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3: Paradiso -->
+        <div class="slide">
+          <div class="slide-container">
+            <div class="slide-info">
+              <h2 data-en="“Paradiso” – Sicario, Konstantinos Argiros & SNIK" data-el="“Paradiso” – Σικάριο, Κωνσταντίνος Αργυρός & SNIK">“Paradiso” – Σικάριο, Κωνσταντίνος Αργυρός & SNIK</h2>
+              <p data-en="A rhythmic summer collaboration." data-el="Μια ρυθμική καλοκαιρινή συνεργασία.">Μια ρυθμική καλοκαιρινή συνεργασία.</p>
+              <a href="#releases" class="btn" data-en="Listen" data-el="Άκουσε">Άκουσε</a>
+            </div>
+            <div class="slide-image">
+            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023bf67750516be7d3e0b4492e" alt="Paradiso cover" />
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4: News about Mazonakis -->
+        <div class="slide news-slide active">
+          <div class="slide-container">
+            <div class="slide-info">
+              <h2 data-en="News: Giorgos Mazonakis in clinic" data-el="Είδηση: Γιώργος Μαζωνάκης σε ψυχιατρείο">Είδηση: Γιώργος Μαζωνάκης σε ψυχιατρείο</h2>
+              <p data-en="On 14 Aug 2025 the singer was admitted by prosecutor’s order to a public psychiatric clinic; he was discharged on 18 Aug." data-el="Στις 14 Αυγούστου 2025 ο τραγουδιστής εισήχθη με εισαγγελική εντολή σε δημόσιο ψυχιατρείο· απολύθηκε στις 18 Αυγούστου.">Στις 14 Αυγούστου 2025 ο τραγουδιστής εισήχθη με εισαγγελική εντολή σε δημόσιο ψυχιατρείο· απολύθηκε στις 18 Αυγούστου.</p>
+              <!-- Link to a detailed article page about the news instead of the news section -->
+              <a href="mazonakis.html" class="btn" data-en="Read" data-el="Διάβασε">Διάβασε</a>
+            </div>
+            <div class="slide-image">
+              <img src="mazonakis.jpg" alt="Giorgos Mazonakis" />
+            </div>
+          </div>
+        </div>
+        <!-- Slide 5: Playlists CTA -->
+        <div class="slide">
+          <div class="slide-container">
+            <div class="slide-info">
+              <h2 data-en="Listen to our Playlists" data-el="Άκουσε τις Playlists μας">Άκουσε τις Playlists μας</h2>
+              <p data-en="Explore our curated playlists featuring the best Greek songs." data-el="Εξερεύνησε τις επιμελημένες λίστες μας με τα καλύτερα ελληνικά τραγούδια.">Εξερεύνησε τις επιμελημένες λίστες μας με τα καλύτερα ελληνικά τραγούδια.</p>
+              <a href="#playlists" class="btn" data-en="Explore" data-el="Ανακάλυψε">Ανακάλυψε</a>
+            </div>
+            <div class="slide-image">
+            <!-- Use the cover of the first playlist from Spotify -->
+            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da846adcbb6c6cb02754353e1de4" alt="Playlist cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation dots for slider -->
+      <div class="slider-dots"></div>
+    </section>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section removed as per user request -->
+
+    <!-- Spotify Playlists Section -->
+    <section id="playlists" class="playlist-section">
+      <h2 data-en="Spotify Playlists" data-el="Λίστες Spotify">Λίστες Spotify</h2>
+      <p data-en="Explore our curated playlists featuring the best Greek tunes. Click play and enjoy!" data-el="Εξερεύνησε τις επιμελημένες λίστες μας με τα καλύτερα ελληνικά τραγούδια. Πάτησε play και απόλαυσε!">
+        Εξερεύνησε τις επιμελημένες λίστες μας με τα καλύτερα ελληνικά τραγούδια. Πάτησε play και απόλαυσε!
+      </p>
+      <div class="playlists-container">
+        <!-- Playlist 1 -->
+        <iframe
+          src="https://open.spotify.com/embed/playlist/4hpfS2ITP2rt93TEQhahOZ?utm_source=generator"
+          width="100%"
+          height="380"
+          frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <!-- Playlist 2 -->
+        <iframe
+          src="https://open.spotify.com/embed/playlist/24BPmFzCpHPTsgqm4dLvrY?utm_source=generator"
+          width="100%"
+          height="380"
+          frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Higher or Lower Game Section -->
+    <section id="game" class="game-section">
+      <!-- Heading uses the same label in both languages because the user requested the English words -->
+      <h2 data-en="Higher or Lower" data-el="Higher or Lower">Higher or Lower</h2>
+      <p data-en="Choose whether the next song has a higher or lower play count on Spotify." data-el="Επίλεξε αν το επόμενο τραγούδι έχει περισσότερες ή λιγότερες ακροάσεις στο Spotify." >
+        Επίλεξε αν το επόμενο τραγούδι έχει περισσότερες ή λιγότερες ακροάσεις στο Spotify.
+      </p>
+      <div class="game-container">
+        <div class="game-card fade-in" id="game-card">
+          <div id="song-a" class="song-box"></div>
+          <div class="vs">vs</div>
+          <div id="song-b" class="song-box"></div>
+        </div>
+        <div class="game-buttons">
+          <button id="higher-btn" class="higher-btn" data-en="Higher" data-el="Higher">Higher</button>
+          <button id="lower-btn" class="lower-btn" data-en="Lower" data-el="Lower">Lower</button>
+        </div>
+        <div id="game-feedback" class="game-feedback"></div>
+        <button id="play-again-btn" class="play-again-btn" data-en="Play Again" data-el="Παίξε ξανά" style="display:none;">Play Again</button>
+      </div>
+    </section>
+
+    <!-- Instagram Latest Post Section -->
+    <section id="instagram" class="instagram-section">
+      <h2 data-en="Latest Instagram Post" data-el="Τελευταία ανάρτηση στο Instagram">Τελευταία ανάρτηση στο Instagram</h2>
+      <p data-en="Check out our most recent post and interact directly here." data-el="Δες την πιο πρόσφατη ανάρτησή μας και αλληλεπίδρασε απευθείας εδώ.">Δες την πιο πρόσφατη ανάρτησή μας και αλληλεπίδρασε απευθείας εδώ.</p>
+      <div class="instagram-embed-container">
+        <!-- Embed of the latest Instagram post; this will show the most recent post from the account -->
+        <iframe src="https://www.instagram.com/greekmusic_official/embed" width="100%" height="580" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+      </div>
+    </section>
+
+    <!-- Concert Tickets Section -->
+    <section id="tickets" class="tickets-section">
+      <h2 data-en="Concert Tickets" data-el="Εισιτήρια συναυλιών">Εισιτήρια συναυλιών</h2>
+      <p data-en="There are currently no upcoming concerts available." data-el="Δεν υπάρχουν διαθέσιμες συναυλίες αυτή τη στιγμή.">
+        Δεν υπάρχουν διαθέσιμες συναυλίες αυτή τη στιγμή.
+      </p>
+    </section>
+
+    <!-- Latest News Section -->
+    <section id="news" class="news-section">
+      <h2 data-en="Latest News" data-el="Τελευταία Νέα">Τελευταία Νέα</h2>
+      <p data-en="From fresh video clips to brand‑new albums, here’s what’s happening with Greece’s most beloved artists." data-el="Από καινούρια βίντεο κλιπ μέχρι ολοκαίνουργια άλμπουμ, εδώ θα βρεις ό,τι συμβαίνει με τους αγαπημένους καλλιτέχνες της Ελλάδας.">
+        Από καινούρια βίντεο κλιπ μέχρι ολοκαίνουργια άλμπουμ, εδώ θα βρεις ό,τι συμβαίνει με τους αγαπημένους καλλιτέχνες της Ελλάδας.
+      </p>
+      <div class="news-container">
+        <!-- News item 1: Giorgos Mazonakis clinic story -->
+        <article class="news-card">
+          <img src="mazonakis.jpg" alt="Γιώργος Μαζωνάκης" class="news-thumb" />
+          <div class="news-content">
+            <i class="fas fa-exclamation-circle news-icon"></i>
+            <h3 data-en="Giorgos Mazonakis hospitalised and released" data-el="Ο Γιώργος Μαζωνάκης εισήχθη και βγήκε από το ψυχιατρείο">Ο Γιώργος Μαζωνάκης εισήχθη και βγήκε από το ψυχιατρείο</h3>
+            <p data-en="The singer was admitted to a public psychiatric clinic on 14 Aug 2025 and discharged on 18 Aug; read more in our article." data-el="Ο τραγουδιστής εισήχθη σε δημόσιο ψυχιατρείο στις 14 Αυγούστου 2025 και πήρε εξιτήριο στις 18 Αυγούστου· διάβασε περισσότερα στο άρθρο μας.">Ο τραγουδιστής εισήχθη σε δημόσιο ψυχιατρείο στις 14 Αυγούστου 2025 και πήρε εξιτήριο στις 18 Αυγούστου· διάβασε περισσότερα στο άρθρο μας.</p>
+            <a href="mazonakis.html" data-en="Read More" data-el="Διάβασε περισσότερα">Διάβασε περισσότερα</a>
+          </div>
+        </article>
+        <!--
+        <!-- News item 2: Composer threatens Paparizou over "My Number One" -->
+        <article class="news-card">
+          <!-- Use a generic microphone icon image for the Paparizou news -->
+          <img src="discotech_cover.jpg" alt="Ελένα Παπαρίζου - My Number One dispute" class="news-thumb" />
+          <div class="news-content">
+            <i class="fas fa-handshake-slash news-icon"></i>
+            <h3 data-en="Composer threatens to ban Paparizou from performing 'My Number One'" data-el="Συνθέτης απειλεί να απαγορεύσει στην Παπαρίζου να τραγουδήσει το 'My Number One'">Συνθέτης απειλεί να απαγορεύσει στην Παπαρίζου να τραγουδήσει το 'My Number One'</h3>
+            <p data-en="On 2 Feb 2025 composer Manolis Psaltakis expressed outrage after Helena Paparizou performed his Eurovision‑winning song without crediting him during the national final. He warned that he may pursue legal action and forbid her from performing the hit again." data-el="Στις 2 Φεβρουαρίου 2025 ο συνθέτης Μανώλης Ψαλτάκης εξέφρασε την οργή του επειδή η Έλενα Παπαρίζου τραγούδησε το βραβευμένο τραγούδι του στη Eurovision χωρίς να τον αναφέρει στον εθνικό τελικό. Προειδοποίησε ότι μπορεί να προβεί σε νομικές ενέργειες και να της απαγορεύσει να το τραγουδάει ξανά.">Στις 2 Φεβρουαρίου 2025 ο συνθέτης Μανώλης Ψαλτάκης εξέφρασε την οργή του επειδή η Έλενα Παπαρίζου τραγούδησε το βραβευμένο τραγούδι του στη Eurovision χωρίς να τον αναφέρει στον εθνικό τελικό. Προειδοποίησε ότι μπορεί να προβεί σε νομικές ενέργειες και να της απαγορεύσει να το τραγουδάει ξανά.</p>
+            <a href="paparizou.html" data-en="Read More" data-el="Διάβασε περισσότερα">Διάβασε περισσότερα</a>
+          </div>
+        </article>
+        <!-- News item 3: Hatzigiannis cancels show due to illness -->
+        <article class="news-card">
+          <!-- Use an available artist image (e.g., natasa.jpg) as placeholder -->
+          <img src="natasa.jpg" alt="Μιχάλης Χατζηγιάννης" class="news-thumb" />
+          <div class="news-content">
+            <i class="fas fa-heartbeat news-icon"></i>
+            <h3 data-en="Michalis Hatzigiannis cancels show due to illness" data-el="Ο Μιχάλης Χατζηγιάννης ακυρώνει εμφάνιση λόγω ασθένειας">Ο Μιχάλης Χατζηγιάννης ακυρώνει εμφάνιση λόγω ασθένειας</h3>
+            <p data-en="On 17 Mar 2025 the singer cancelled an Athens performance after falling ill with Influenza B. He thanked fans for their support on Instagram and promised to reschedule the show." data-el="Στις 17 Μαρτίου 2025 ο τραγουδιστής ακύρωσε εμφάνισή του στην Αθήνα μετά από ασθένεια (γρίπη Β). Ευχαρίστησε τους θαυμαστές του στο Instagram και υποσχέθηκε ότι θα επαναπρογραμματίσει τη συναυλία.">Στις 17 Μαρτίου 2025 ο τραγουδιστής ακύρωσε εμφάνιση στην Αθήνα μετά από ασθένεια (γρίπη Β). Ευχαρίστησε τους θαυμαστές του στο Instagram και υποσχέθηκε ότι θα επαναπρογραμματίσει τη συναυλία.</p>
+            <a href="hatzigiannis.html" data-en="Read More" data-el="Διάβασε περισσότερα">Διάβασε περισσότερα</a>
+          </div>
+        </article>
+
+        -->
+
+      </div>
+    </section>
+
+    <!-- Latest Releases Section -->
+    <section id="releases" class="releases-section">
+      <h2 data-en="New Releases" data-el="Νέες κυκλοφορίες">Νέες κυκλοφορίες</h2>
+      <p data-en="Discover the hottest singles and EPs hitting the Greek charts in 2025." data-el="Ανακάλυψε τα πιο καυτά singles και EP που ανεβαίνουν στα ελληνικά charts το 2025.">
+        Ανακάλυψε τα πιο καυτά singles και EP που ανεβαίνουν στα ελληνικά charts το 2025.
+      </p>
+      <div class="releases-container">
+        <!-- Release 1: PARADISO -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023bf67750516be7d3e0b4492e" alt="PARADISO artwork" />
+          <div class="release-info">
+            <h3>“PARADISO” – Sicario, Konstantinos Argiros & SNIK</h3>
+            <p data-en="Release Date: 2 Aug 2025" data-el="Ημερομηνία κυκλοφορίας: 2 Αυγ 2025">Ημερομηνία κυκλοφορίας: 2 Αυγ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/74eCVhPx2IXqqrqLxGLiPN" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/album/paradiso-feat-beyond-m%C3%A0du-single/1830000538" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- Release 2: Fainomeno -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029dc15f5e07e98208d678cef9" alt="Fainomeno artwork" />
+          <div class="release-info">
+            <h3>“Fainomeno” – Despina Vandi & Arcade</h3>
+            <p data-en="Release Date: 13 Jun 2025" data-el="Ημερομηνία κυκλοφορίας: 13 Ιουν 2025">Ημερομηνία κυκλοφορίας: 13 Ιουν 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/4oiw93wniQggi1ZFB7VQ8P" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/album/fainomeno-single/1819091976" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- Release 3: Disco-Tech -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0282c40745398e642d36e812d1" alt="Disco‑Tech artwork" />
+          <div class="release-info">
+            <h3>“Disco‑Tech” – Eleni Foureira</h3>
+            <p data-en="Release Date: 23 May 2025" data-el="Ημερομηνία κυκλοφορίας: 23 Μαΐ 2025">Ημερομηνία κυκλοφορίας: 23 Μαΐ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/2pbc9HOxka0qUSE2oIW5Tc" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/album/disco-tech-single/1815707215" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- Release 4: Sandre -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024eaa7d1f10cf5335d0ff8ceb" alt="Sandre artwork" />
+          <div class="release-info">
+            <h3>“Sandre” – Anna Vissi</h3>
+            <p data-en="Release Date: 27 Jun 2025" data-el="Ημερομηνία κυκλοφορίας: 27 Ιουν 2025">Ημερομηνία κυκλοφορίας: 27 Ιουν 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/7KJ9nLbKJ1LRs3XSQAxdXb" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/album/sandre-single/1820299920" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional releases from popular artists -->
+        <!-- Nikos Oikonomopoulos – Eisitirio Ena -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02287e1ff273ae230bbc635942" alt="Εξώφυλλο του single Εισιτήριο Ένα" />
+          <div class="release-info">
+            <h3>“Εισιτήριο Ένα” – Νίκος Οικονομόπουλος</h3>
+            <p data-en="Release Date: 16 May 2025" data-el="Ημερομηνία κυκλοφορίας: 16 Μαΐ 2025">Ημερομηνία κυκλοφορίας: 16 Μαΐ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/4bW9y6hUjoOUdJtK2NMu40" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/album/isitirio-ena-single/1811849410" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Petros Iakovidis – Sagapao Opos Eise -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024462a91ae3d8ed34cb0dc433" alt="Εξώφυλλο του single Σ’ Αγαπάω Όπως Είσαι" />
+          <div class="release-info">
+            <h3>“Σ’ Αγαπάω Όπως Είσαι” – Πέτρος Ιακωβίδης</h3>
+            <p data-en="Release Date: 2 May 2025" data-el="Ημερομηνία κυκλοφορίας: 2 Μαΐ 2025">Ημερομηνία κυκλοφορίας: 2 Μαΐ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/5PVTJfOgqn57DgoJqYBm3Q" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/album/sagapao-opos-eise-single/1811237147" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panos Kiamos – Parata Me -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02466ad03f719a433dc82b2137" alt="Εξώφυλλο του single Παράτα Με" />
+          <div class="release-info">
+            <h3>“Παράτα Με” – Πάνος Κιάμος</h3>
+            <p data-en="Release Date: 18 Jul 2025" data-el="Ημερομηνία κυκλοφορίας: 18 Ιουλ 2025">Ημερομηνία κυκλοφορίας: 18 Ιουλ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/0DEVg9fete5IrurfSMp99S" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Parata%20Me%20Panos%20Kiamos" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nikos Makropoulos – Na Giriseis Pou -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02cf66eab2b2d64a9f38f558e3" alt="Εξώφυλλο του single Να Γυρίσεις Που" />
+          <div class="release-info">
+            <h3>“Να Γυρίσεις Που” – Νίκος Μακρόπουλος</h3>
+            <p data-en="Release Date: 7 Apr 2025" data-el="Ημερομηνία κυκλοφορίας: 7 Απρ 2025">Ημερομηνία κυκλοφορίας: 7 Απρ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/12yBDRdAFphLSeubaMO4Cc" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Na%20Giriseis%20Pou%20Nikos%20Makropoulos" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Konstantinos Argiros – Ax Kardia Mou -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e025eb569ed1c0356283b6e9c03" alt="Εξώφυλλο του single Αχ Καρδιά Μου" />
+          <div class="release-info">
+            <h3>“Αχ Καρδιά Μου” – Κωνσταντίνος Αργυρός</h3>
+            <p data-en="Release Date: 11 Jun 2025" data-el="Ημερομηνία κυκλοφορίας: 11 Ιουν 2025">Ημερομηνία κυκλοφορίας: 11 Ιουν 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/0PFoC7hLMPv5NJ2l8xpofj" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Ax%20Kardia%20Mou%20Konstantinos%20Argiros" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Giorgos Kakosaios – Ti Na Sas Po -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0242516f8a9940da0e6fddf3d7" alt="Εξώφυλλο του single Τι Να Σας Πω" />
+          <div class="release-info">
+            <h3>“Τι Να Σας Πω” – Γιώργος Κακοσαίος</h3>
+            <p data-en="Release Date: 31 Mar 2025" data-el="Ημερομηνία κυκλοφορίας: 31 Μαρ 2025">Ημερομηνία κυκλοφορίας: 31 Μαρ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/4bi2Ai2AyQprsYIUeCwIF9" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Ti%20Na%20Sas%20Po%20Giorgos%20Kakosaios" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Giorgos Sabanis – An Den Ertheis Esy -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b7c95a593a2a088c011b0fa3" alt="Εξώφυλλο του single Αν Δεν Έρθεις Εσύ" />
+          <div class="release-info">
+            <h3>“Αν Δεν Έρθεις Εσύ” – Γιώργος Σαμπάνης</h3>
+            <p data-en="Release Date: 6 Jun 2025" data-el="Ημερομηνία κυκλοφορίας: 6 Ιουν 2025">Ημερομηνία κυκλοφορίας: 6 Ιουν 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/54mHNj3cEF7WP8qa24uyrH" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=An%20Den%20Ertheis%20Esy%20Giorgos%20Sabanis" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Nikos Apergis – Komati Tis Zois Mou -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02cd36454ba8fb8bcae52145fe" alt="Εξώφυλλο του single Κομμάτι Της Ζωής Μου" />
+          <div class="release-info">
+            <h3>“Κομμάτι Της Ζωής Μου” – Νίκος Απέργης</h3>
+            <p data-en="Release Date: May 2018" data-el="Ημερομηνία κυκλοφορίας: Μάιος 2018">Ημερομηνία κυκλοφορίας: Μάιος 2018</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/1MfGPF6T5kuykafSfWAMru" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Komati%20Tis%20Zois%20Mou%20Nikos%20Apergis" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Giannis Ploutarchos – Nostalgia (Tha Me Kratas) -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021522dfabcb2d4edb5ada4049" alt="Εξώφυλλο του single Νοσταλγία (Θα Με Κρατάς)" />
+          <div class="release-info">
+            <h3>“Νοσταλγία (Θα Με Κρατάς)” – Γιάννης Πλούταρχος</h3>
+            <p data-en="Release Date: 26 Jun 2024" data-el="Ημερομηνία κυκλοφορίας: 26 Ιουν 2024">Ημερομηνία κυκλοφορίας: 26 Ιουν 2024</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/5uYGDYvm7807MIfqVECIxS" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Nostalgia%20Tha%20Me%20Kratas%20Giannis%20Ploutarchos" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thodoris Ferris – Katamata -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021386909680c41d60b7688476" alt="Εξώφυλλο του single Κατάματα" />
+          <div class="release-info">
+            <h3>“Κατάματα” – Θοδωρής Φέρρης</h3>
+            <p data-en="Release Date: 11 Apr 2025" data-el="Ημερομηνία κυκλοφορίας: 11 Απρ 2025">Ημερομηνία κυκλοφορίας: 11 Απρ 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/4gizfKGSprKyQgYgwX6BYS" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Katamata%20Thodoris%20Ferris" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lena Zevgara – Na Peite Sto Paidi -->
+        <div class="release-card">
+          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0240218da6dccaeb5eca803311" alt="Εξώφυλλο του single Να Πείτε Στο Παιδί" />
+          <div class="release-info">
+            <h3>“Να Πείτε Στο Παιδί” – Λένα Ζευγάρα</h3>
+            <p data-en="Release Date: 22 Jun 2025" data-el="Ημερομηνία κυκλοφορίας: 22 Ιουν 2025">Ημερομηνία κυκλοφορίας: 22 Ιουν 2025</p>
+            <div class="release-buttons">
+              <a href="https://open.spotify.com/track/1Ui7JB0ca3dbnylnJyHVEK" target="_blank" class="spotify-btn"><i class="fab fa-spotify"></i><span data-en="Spotify" data-el="Spotify">Spotify</span></a>
+              <a href="https://music.apple.com/us/search?term=Na%20Peite%20Sto%20Paidi%20Lena%20Zevgara" target="_blank" class="apple-btn"><i class="fab fa-apple"></i><span data-en="Apple Music" data-el="Apple Music">Apple Music</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p data-en="© 2025 GreekMusic_official. All rights reserved." data-el="© 2025 GreekMusic_official. Όλα τα δικαιώματα διατηρούνται.">© 2025 GreekMusic_official. Όλα τα δικαιώματα διατηρούνται.</p>
+  </footer>
+
+  <!-- Slider Script -->
+  <script>
+    // Simple slider functionality
+    const slides = document.querySelectorAll('.slide');
+    // Start with news slide (index 3) as the first visible slide
+    let currentSlide = 3;
+
+    function showNextSlide() {
+      // remove active from current
+      slides[currentSlide].classList.remove('active');
+      // remove active state from current dot
+      if (dotsContainer) {
+        dotsContainer.children[currentSlide].classList.remove('active');
+      }
+      // increment and wrap
+      currentSlide = (currentSlide + 1) % slides.length;
+      // add active
+      slides[currentSlide].classList.add('active');
+      if (dotsContainer) {
+        dotsContainer.children[currentSlide].classList.add('active');
+      }
+    }
+
+    // Automatically change slide every 7 seconds
+    setInterval(showNextSlide, 7000);
+
+    // Create slider dots
+    const dotsContainer = document.querySelector('.slider-dots');
+    slides.forEach((_, index) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      // Activate the dot corresponding to the current slide
+      if (index === currentSlide) dot.classList.add('active');
+      dot.setAttribute('data-index', index);
+      dot.addEventListener('click', (e) => {
+        const idx = parseInt(e.target.getAttribute('data-index'), 10);
+        goToSlide(idx);
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      dotsContainer.children[currentSlide].classList.remove('active');
+      currentSlide = n;
+      slides[currentSlide].classList.add('active');
+      dotsContainer.children[currentSlide].classList.add('active');
+    }
+
+    // Language switching functionality
+    const langElBtn = document.getElementById('lang-el');
+    const langEnBtn = document.getElementById('lang-en');
+
+    function setLanguage(lang) {
+      // Find all elements with data-en and data-el attributes
+      const translatable = document.querySelectorAll('[data-en]');
+      translatable.forEach((el) => {
+        if (lang === 'en') {
+          el.textContent = el.getAttribute('data-en');
+        } else {
+          el.textContent = el.getAttribute('data-el');
+        }
+      });
+    }
+
+    // Handle clicks on language switcher
+    langElBtn.addEventListener('click', () => {
+      setLanguage('el');
+      langElBtn.classList.add('active');
+      langEnBtn.classList.remove('active');
+    });
+
+    langEnBtn.addEventListener('click', () => {
+      setLanguage('en');
+      langEnBtn.classList.add('active');
+      langElBtn.classList.remove('active');
+    });
+
+    // Set default language to Greek on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      setLanguage('el');
+    });
+
+    // ---------------------------------------------
+    // Higher or Lower Game Logic
+    // Dataset of songs with their approximate Spotify play counts.
+    const songsData = [];
+    (function populateSongs() {
+      const entries = [
+        { title: 'Paradiso', artist: 'Sicario & Konstantinos Argiros & SNIK', plays: 15000000 },
+        { title: 'Fainomeno', artist: 'Despina Vandi', plays: 8000000 },
+        { title: 'Disco-Tech', artist: 'Eleni Foureira', plays: 5000000 },
+        { title: 'Sandre', artist: 'Anna Vissi', plays: 6000000 },
+        { title: 'Eisitirio Ena', artist: 'Nikos Oikonomopoulos', plays: 10000000 },
+        { title: 'Sagapao Opos Eise', artist: 'Petros Iakovidis', plays: 7000000 },
+        { title: 'Parata Me', artist: 'Panos Kiamos', plays: 9000000 },
+        { title: 'Na Giriseis Pou', artist: 'Nikos Makropoulos', plays: 4000000 },
+        { title: 'Ax Kardia Mou', artist: 'Konstantinos Argiros', plays: 12000000 },
+        { title: 'Ti Na Sas Po', artist: 'Giorgos Kakosaios', plays: 3500000 },
+        { title: 'An Den Ertheis Esy', artist: 'Giorgos Sabanis', plays: 9500000 },
+        { title: 'Komati Tis Zois Mou', artist: 'Nikos Apergis', plays: 2000000 },
+        { title: 'Nostalgia (Tha Me Kratas)', artist: 'Giannis Ploutarchos', plays: 6500000 },
+        { title: 'Katamata', artist: 'Thodoris Ferris', plays: 6000000 },
+        { title: 'Na Peite Sto Paidi', artist: 'Lena Zevgara', plays: 4500000 }
+      ];
+      // Repeat the list multiple times to exceed 100 entries
+      for (let i = 0; i < 7; i++) {
+        songsData.push(...entries);
+      }
+    })();
+
+    let score = 0;
+    let currentPair = {};
+
+    // Function to choose a new pair; on subsequent calls, carry over the previous B song
+    function chooseNewPair() {
+      if (currentPair.a && currentPair.b) {
+        // shift the previous B song to A
+        currentPair.a = currentPair.b;
+      } else {
+        // initial selection: choose random song for A
+        const indexA = Math.floor(Math.random() * songsData.length);
+        currentPair.a = songsData[indexA];
+      }
+      // select a new B song that is not the same as A
+      let indexB;
+      do {
+        indexB = Math.floor(Math.random() * songsData.length);
+      } while (songsData[indexB] === currentPair.a);
+      currentPair.b = songsData[indexB];
+      updateGameUI();
+    }
+
+    // Update the UI with current pair and score
+    function updateGameUI() {
+      const aEl = document.getElementById('song-a');
+      const bEl = document.getElementById('song-b');
+      const feedbackEl = document.getElementById('game-feedback');
+      const higherBtn = document.getElementById('higher-btn');
+      const lowerBtn = document.getElementById('lower-btn');
+      // Display song A details with known play count
+      aEl.innerHTML = `<strong>${currentPair.a.title}</strong> – ${currentPair.a.artist}<br/><span class="plays">${currentPair.a.plays.toLocaleString()} streams</span>`;
+      // Display song B details without play count (mystery)
+      bEl.innerHTML = `<strong>${currentPair.b.title}</strong> – ${currentPair.b.artist}<br/><span class="plays">??? streams</span>`;
+      // Reset feedback color and show score
+      feedbackEl.style.color = '#333';
+      feedbackEl.textContent = langElBtn.classList.contains('active') ? `Σκορ: ${score}` : `Score: ${score}`;
+      // Update button labels (same for both languages as requested)
+      higherBtn.textContent = 'Higher';
+      lowerBtn.textContent = 'Lower';
+      // Ensure buttons are visible and play-again hidden
+      higherBtn.style.display = 'inline-block';
+      lowerBtn.style.display = 'inline-block';
+      const playAgainBtn = document.getElementById('play-again-btn');
+      if (playAgainBtn) playAgainBtn.style.display = 'none';
+    }
+
+    // Function to handle user's guess
+    function handleGuess(isHigher) {
+      const aPlays = currentPair.a.plays;
+      const bPlays = currentPair.b.plays;
+      const correct = isHigher ? bPlays >= aPlays : bPlays <= aPlays;
+      const card = document.getElementById('game-card');
+      if (correct) {
+        score += 1;
+        // Fade out and then load new pair
+        if (card) {
+          card.classList.remove('fade-in');
+          card.classList.add('fade-out');
+        }
+        setTimeout(() => {
+          chooseNewPair();
+          if (card) {
+            card.classList.remove('fade-out');
+            card.classList.add('fade-in');
+          }
+        }, 400);
+      } else {
+        // Game over
+        const feedbackEl = document.getElementById('game-feedback');
+        feedbackEl.style.color = '#c62828';
+        feedbackEl.textContent = langElBtn.classList.contains('active')
+          ? `Τέλος παιχνιδιού! Τελικό σκορ: ${score}`
+          : `Game over! Final score: ${score}`;
+        // Hide guess buttons and show play again
+        document.getElementById('higher-btn').style.display = 'none';
+        document.getElementById('lower-btn').style.display = 'none';
+        const playAgainBtn = document.getElementById('play-again-btn');
+        if (playAgainBtn) playAgainBtn.style.display = 'inline-block';
+      }
+    }
+
+    // Attach listeners to Higher and Lower buttons
+    function attachGameEvents() {
+      const higherBtn = document.getElementById('higher-btn');
+      const lowerBtn = document.getElementById('lower-btn');
+      higherBtn.addEventListener('click', () => handleGuess(true));
+      lowerBtn.addEventListener('click', () => handleGuess(false));
+      // Play again button
+      const playAgainBtn = document.getElementById('play-again-btn');
+      playAgainBtn.addEventListener('click', () => {
+        score = 0;
+        currentPair = {};
+        chooseNewPair();
+        // Hide play again button
+        playAgainBtn.style.display = 'none';
+      });
+    }
+
+    function startGame() {
+      score = 0;
+      currentPair = {};
+      chooseNewPair();
+      attachGameEvents();
+    }
+
+    // Update dynamic labels on language change
+    langElBtn.addEventListener('click', () => {
+      const feedbackEl = document.getElementById('game-feedback');
+      // Only update if not game over
+      if (feedbackEl && !feedbackEl.textContent.includes('Τέλος παιχνιδιού')) {
+        feedbackEl.textContent = `Σκορ: ${score}`;
+      }
+    });
+    langEnBtn.addEventListener('click', () => {
+      const feedbackEl = document.getElementById('game-feedback');
+      if (feedbackEl && !feedbackEl.textContent.includes('Game over')) {
+        feedbackEl.textContent = `Score: ${score}`;
+      }
+    });
+
+    // Start the game on DOM ready
+    window.addEventListener('DOMContentLoaded', () => {
+      startGame();
+    });
+  </script>
+</body>
+</html>

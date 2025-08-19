@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Μιχάλης Χατζηγιάννης – Ακύρωση συναυλίας</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">GreekMusic Official</div>
+    <ul class="nav-links">
+      <li><a href="index.html#home" data-en="Home" data-el="Αρχική">Αρχική</a></li>
+      <li><a href="index.html#playlists" data-en="Playlists" data-el="Λίστες">Λίστες</a></li>
+      <li><a href="index.html#tickets" data-en="Tickets" data-el="Εισιτήρια">Εισιτήρια</a></li>
+      <li><a href="index.html#news" data-en="News" data-el="Νέα">Νέα</a></li>
+      <li><a href="index.html#releases" data-en="Releases" data-el="Κυκλοφορίες">Κυκλοφορίες</a></li>
+    </ul>
+    <div class="nav-extras">
+      <a href="https://www.instagram.com/greekmusic_official/" target="_blank" class="instagram-nav" title="Follow on Instagram">
+        <i class="fab fa-instagram"></i>
+        <span data-en="Follow us on Instagram" data-el="Ακολουθήστε μας στο Instagram">Ακολουθήστε μας στο Instagram</span>
+      </a>
+      <div class="lang-switch">
+        <span id="lang-el" class="active">Ελληνικά</span> | <span id="lang-en">English</span>
+      </div>
+    </div>
+  </nav>
+  <main class="article-page">
+    <article class="news-article">
+      <img src="natasa.jpg" alt="Μιχάλης Χατζηγιάννης" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:12px; margin-bottom:1rem;" />
+      <h1 data-en="Michalis Hatzigiannis cancels show due to illness" data-el="Ο Μιχάλης Χατζηγιάννης ακυρώνει εμφάνιση λόγω ασθένειας">Ο Μιχάλης Χατζηγιάννης ακυρώνει εμφάνιση λόγω ασθένειας</h1>
+      <p data-en="Popular Greek singer Michalis Hatzigiannis was forced to cancel a scheduled performance in Athens on 17 March 2025 after contracting Influenza B." data-el="Ο δημοφιλής τραγουδιστής Μιχάλης Χατζηγιάννης αναγκάστηκε να ακυρώσει προγραμματισμένη εμφάνιση στην Αθήνα στις 17 Μαρτίου 2025 μετά από γρίπη Β.">Ο δημοφιλής τραγουδιστής Μιχάλης Χατζηγιάννης αναγκάστηκε να ακυρώσει προγραμματισμένη εμφάνιση στην Αθήνα στις 17 Μαρτίου 2025 μετά από γρίπη Β.</p>
+      <p data-en="In a statement, the venue announced that tickets would remain valid for a rescheduled date, while Hatzigiannis took to Instagram to thank fans for their love and understanding." data-el="Σε ανακοίνωσή του, ο χώρος της συναυλίας ενημέρωσε ότι τα εισιτήρια θα ισχύουν για νέα ημερομηνία, ενώ ο Χατζηγιάννης ευχαρίστησε τους θαυμαστές του στο Instagram για την αγάπη και την κατανόηση.">Σε ανακοίνωσή του, ο χώρος της συναυλίας ενημέρωσε ότι τα εισιτήρια θα ισχύουν για νέα ημερομηνία, ενώ ο Χατζηγιάννης ευχαρίστησε τους θαυμαστές του στο Instagram για την αγάπη και την κατανόηση.</p>
+      <p data-en="He promised that the rescheduled show would be unforgettable and that he is focusing on recovering from the illness." data-el="Υποσχέθηκε ότι η επαναπρογραμματισμένη συναυλία θα είναι αξέχαστη και ότι επικεντρώνεται στην ανάρρωσή του.">Υποσχέθηκε ότι η επαναπρογραμματισμένη συναυλία θα είναι αξέχαστη και ότι επικεντρώνεται στην ανάρρωσή του.</p>
+      <p class="article-cite" data-en="Source: GreekCityTimes" data-el="Πηγή: GreekCityTimes">Πηγή: GreekCityTimes</p>
+      <a href="index.html#news" class="btn back-btn" data-en="Back to News" data-el="Επιστροφή στα Νέα">Επιστροφή στα Νέα</a>
+    </article>
+  </main>
+  <script>
+    const langElBtn = document.getElementById('lang-el');
+    const langEnBtn = document.getElementById('lang-en');
+    function setLanguage(lang) {
+      const translatable = document.querySelectorAll('[data-en]');
+      translatable.forEach((el) => {
+        if (lang === 'en') {
+          el.textContent = el.getAttribute('data-en');
+        } else {
+          el.textContent = el.getAttribute('data-el');
+        }
+      });
+    }
+    langElBtn.addEventListener('click', () => {
+      setLanguage('el');
+      langElBtn.classList.add('active');
+      langEnBtn.classList.remove('active');
+    });
+    langEnBtn.addEventListener('click', () => {
+      setLanguage('en');
+      langEnBtn.classList.add('active');
+      langElBtn.classList.remove('active');
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+      setLanguage('el');
+    });
+  </script>
+</body>
+</html>
